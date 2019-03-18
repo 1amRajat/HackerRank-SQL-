@@ -1,0 +1,1 @@
+select * from (select (salary * months) as A,count(*) from Employee group by (salary * months) order by A desc) where rownum = 1;
