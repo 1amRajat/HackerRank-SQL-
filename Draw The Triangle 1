@@ -1,0 +1,13 @@
+DECLARE 
+   P number(20) ; 
+   b number;
+   c number;
+BEGIN 
+   FOR P in 1 .. 21 LOOP
+   --c : 20 - P;
+  for b in 1..(21-P) Loop
+      dbms_output.put('* '); 
+  end loop;
+      dbms_output.new_line; 
+  END LOOP; 
+END; 
